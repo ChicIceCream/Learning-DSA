@@ -1,5 +1,6 @@
 array = [1,2,3,4,5,6,7,8,9]
-upper_bound, lower_bound = array[0], array[8]
+upper_bound, lower_bound = len(array) -1, 0
+print(upper_bound, lower_bound)
 
 item = int(input("Enter the number to find : "))
 print(item)
@@ -10,7 +11,6 @@ index = lower_bound
 
 if found == False:
     for index in range(len(array[:])):
-        print(index)
         if item == array[index]:
             found = True
         
