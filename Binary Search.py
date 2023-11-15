@@ -1,5 +1,5 @@
-my_list = [16, 19, 21, 27, 36, 42, 55, 67, 76, 89]
-upper_bound, lower_bound = my_list[5], my_list[0] #! Assinging upper and lower bounds
+my_list = [0,1,2,3,4,5,6]
+upper_bound, lower_bound = len(my_list) -1, 0 #! Assinging upper and lower bounds
 found = False
 print(upper_bound, lower_bound)
 item = int(input("Enter a number: "))
