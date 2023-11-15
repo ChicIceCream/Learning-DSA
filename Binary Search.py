@@ -1,12 +1,11 @@
-my_list = [0,1,2,3,4,5,6]
+my_list = [16, 19, 21, 27, 36, 42, 55, 67, 76, 89]
 upper_bound, lower_bound = my_list[5], my_list[0] #! Assinging upper and lower bounds
 found = False
-
+print(upper_bound, lower_bound)
 item = int(input("Enter a number: "))
 
 for index in range(len(my_list)):
     index = int((upper_bound + lower_bound)//2)
-    print(index)
     if item == my_list[index]:
         found = True
     
