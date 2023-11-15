@@ -4,7 +4,7 @@ found = False
 print(upper_bound, lower_bound)
 item = int(input("Enter a number: "))
 
-for index in range(len(my_list)):
+for index in enumerate(my_list):
     index = int((upper_bound + lower_bound)//2)
     if item == my_list[index]:
         found = True

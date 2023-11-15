@@ -4,7 +4,7 @@ item = int(input("Enter the number to find: "))
 
 found = False
 
-for index, value in enumerate(array):
+for index, value in enumerate(array): #! Can also use range(len(array)) but enumerate provdes simplicity
     if item == value:
         found = True
         break
