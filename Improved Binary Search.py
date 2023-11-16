@@ -1,3 +1,4 @@
+
 mylist = [16, 19, 21, 27, 36, 42, 55, 67, 76, 89]
 upperbound, lowerbound, found = len(mylist) - 1, 0, False
 print(upperbound, lowerbound, found)
