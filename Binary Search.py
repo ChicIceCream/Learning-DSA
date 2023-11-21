@@ -18,4 +18,4 @@ for index in enumerate(my_list):
 if found == True:
     print(f"Number is in te list, and at index : {my_list[item]}")
 else: 
-    print("Number does not exist.")
+    print("Number does not exist in the list.")
