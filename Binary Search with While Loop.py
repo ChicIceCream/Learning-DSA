@@ -7,7 +7,7 @@ item = int(input("Enter your number to find from the list: "))
 
 
 # starting loop to check through every element
-  
+
 while lowerbound <= upperbound:
     index = (upperbound + lowerbound) // 2
     

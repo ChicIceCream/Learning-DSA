@@ -1,7 +1,7 @@
 def bubble_sort(arr):
     n = len(arr)
 
-    # Traverse through all elements in the array
+    # Go through all elements in the array
     for i in range(n):
         # Last i elements are already sorted, so we don't need to check them
         for j in range(0, n-i-1):
