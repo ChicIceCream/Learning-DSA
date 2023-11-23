@@ -12,7 +12,6 @@ for index in enumerate(my_list):
     if item == my_list[index]:
         found = True
         break # Add this line to exit the loop once the item is found
-    # second condition that if the item is greater than index
     
     # second condition that if the item is greater than index
     if item > my_list[index]:
