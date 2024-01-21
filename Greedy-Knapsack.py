@@ -16,7 +16,7 @@ def greedy_knapsack(weights, values, capacity):
     return total_value, selected_items
 
 # Example usage:
-weights = [2, 3, 5, 7, 1, 4, 1]
+weights = [2, 3, 5, 7, 1, 4, 6]
 values = [10, 5, 15, 7, 8, 9, 4]
 capacity = 15
 
