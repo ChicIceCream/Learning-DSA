@@ -13,6 +13,7 @@ node3 = Node(30)
 # 4th node
 node4 = Node(40)
 
+# Assign the next node to each node
 node1.next = node2
 node2.next = node3
 node3.next = node4
