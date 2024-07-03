@@ -44,23 +44,23 @@ class LinkedList:
             last_node = last_node.next
         last_node.next = new_node
 
-    # def prepend(self, data):
-    #     new_node = Node(data)
-    #     new_node.next = self.head
-    #     self.head = new_node
+    def prepend(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
 
-    # def delete_with_value(self, data):
-    #     if self.head is None:
-    #         return
-    #     if self.head.data == data:
-    #         self.head = self.head.next
-    #         return
-    #     current_node = self.head
-    #     while current_node.next:
-    #         if current_node.next.data == data:
-    #             current_node.next = current_node.next.next
-    #             return
-    #         current_node = current_node.next
+    def delete_with_value(self, data):
+        if self.head is None:
+            return
+        if self.head.data == data:
+            self.head = self.head.next
+            return
+        current_node = self.head
+        while current_node.next:
+            if current_node.next.data == data:
+                current_node.next = current_node.next.next
+                return
+            current_node = current_node.next
 
     def print_list(self):
         current_node = self.head
@@ -72,6 +72,7 @@ class LinkedList:
 # Example usage:
 
 linked_list = LinkedList()
+linked_list.print_list()
 
 # Append nodes
 linked_list.append(10)
@@ -83,13 +84,13 @@ linked_list.append(40)
 linked_list.print_list()
 
 # Prepend node
-# linked_list.prepend(5)
+linked_list.prepend(5)
 
 # Print list again
 linked_list.print_list()
 
 # Delete a node with value 20
-# linked_list.delete_with_value(20)
+linked_list.delete_with_value(20)
 
 # Print list again
 linked_list.print_list()
