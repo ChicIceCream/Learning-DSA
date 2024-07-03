@@ -34,15 +34,16 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
+    # This is to append a new node to the linked list
     def append(self, data):
-        new_node = Node(data)
-        if self.head is None:
-            self.head = new_node
+        new_node = Node(data) # Makes a new variable and gives it the property of a node
+        if self.head is None: # If the first node is empty
+            self.head = new_node # Then the first node becomes the node that was created
             return
-        last_node = self.head
+        last_node = self.head # If the first node is not empty, then the last node becomes the first node
         while last_node.next is not None:
-            last_node = last_node.next
-        last_node.next = new_node
+            last_node = last_node.next # If the next node is not empty, then the last node becomes the next node
+        last_node.next = new_node # If the next node is "None", then the last node's value becomes the new node
 
     def prepend(self, data):
         new_node = Node(data)
