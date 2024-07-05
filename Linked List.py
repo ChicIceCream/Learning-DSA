@@ -46,9 +46,9 @@ class LinkedList:
         last_node.next = new_node # If the next node is "None", then the last node's value becomes the new node
 
     def prepend(self, data):
-        new_node = Node(data)
-        new_node.next = self.head
-        self.head = new_node
+        new_node = Node(data) #* Makes a new variable and gives it the property of a node
+        new_node.next = self.head #* The next node of the new node becomes the first node
+        self.head = new_node # The new node becomes the first node
 
     def delete_with_value(self, data):
         if self.head is None:
