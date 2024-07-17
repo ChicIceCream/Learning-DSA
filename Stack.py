@@ -20,8 +20,8 @@ class Solution:
 
 solution = Solution()
 print(solution.isValid("()"))      # Output: True
-# print(solution.isValid("()[]{}"))  # Output: True
-# print(solution.isValid("(]"))      # Output: False
-# print(solution.isValid("([)]"))    # Output: False
-# print(solution.isValid("{[]}"))    # Output: True
+print(solution.isValid("()[]{}"))  # Output: True
+print(solution.isValid("(]"))      # Output: False
+print(solution.isValid("([)]"))    # Output: False
+print(solution.isValid("{[]}"))    # Output: True
 
